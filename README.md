@@ -1,69 +1,45 @@
-# React + TypeScript + Vite
+# 🌊 WaveWatch
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+WaveWatch is a modern and responsive web platform for checking **real-time wave & weather conditions** around the world.  
+Built for **surf lovers, sailors, and sea enthusiasts**, WaveWatch delivers accurate and up-to-date data in a clean, minimal, and mobile-friendly interface.
 
-Currently, two official plugins are available:
+![Screenshot](screenshot.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- 🌊 **Live Wave & Weather Data** – Check wave height, wind speed, humidity, and more.
+- 📍 **Search Any City** – Get instant data for your desired location.
+- 📱 **Responsive Design** – Optimized for both desktop and mobile devices.
+- 🎯 **Interactive Side Navigation** – Smooth navigation between sections with active state indicators.
+- ⚡ **Fast & Modern UI** – Built with React + TailwindCSS.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- **Frontend:** React, TypeScript, TailwindCSS
+- **Icons:** React Icons
+- **API:** [OpenWeather](https://openweathermap.org/) for live weather data
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 📦 Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/wavewatch.git
+   ```
+2. Navigate to the project folder:
+   ```bash
+   cd wavewatch
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🌍 Live Demo
+Check out the live site here: **[WaveWatch Live](https://wavewatch-app.netlify.app/)**
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+## ❤️ Credits
+Built with love for all surf lovers by [**Ben Katalan**](https://benkatalan.netlify.app)  
+Weather data provided by [OpenWeather](https://openweathermap.org/)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
